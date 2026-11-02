@@ -1,0 +1,64 @@
+/* 全局样式：暗色大屏风格（对标政企指挥大屏审美） */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body, #app { width: 100%; height: 100%; overflow: hidden; }
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  background: #0b1220;
+  color: #d7e3f4;
+  font-size: 14px;
+}
+
+/* 布局骨架 */
+.layout { display: flex; flex-direction: column; height: 100%; }
+.header {
+  height: 56px; flex: 0 0 56px;
+  display: flex; align-items: center; padding: 0 18px;
+  background: linear-gradient(90deg, #0e1c33 0%, #123055 60%, #0e1c33 100%);
+  border-bottom: 1px solid #1d3least; border-bottom: 1px solid #1d3557;
+}
+.header .title { font-size: 19px; font-weight: 700; letter-spacing: 2px; color: #7fd8c8; }
+.header .sub { margin-left: 14px; font-size: 12px; color: #6b7f9e; }
+
+.main { flex: 1; display: flex; overflow: hidden; }
+.left { width: 250px; flex: 0 0 250px; padding: 12px; overflow-y: auto; background: #0e1729; border-right: 1px solid #1d3557; }
+.center { flex: 1; position: relative; }
+.right { width: 320px; flex: 0 0 320px; padding: 12px; overflow-y: auto; background: #0e1729; border-left: 1px solid #1d3557; }
+
+/* 面板卡片 */
+.panel { background: #12203a; border: 1px solid #1d3557; border-radius: 8px; margin-bottom: 12px; }
+.panel-title {
+  padding: 9px 12px; font-size: 13px; font-weight: 600; color: #8fc7ff;
+  border-bottom: 1px solid #1d3557; display: flex; align-items: center; gap: 6px;
+}
+.panel-body { padding: 10px 12px; }
+
+/* 图层开关行 */
+.layer-row { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; }
+.layer-row .name { font-size: 13px; }
+
+/* 地图悬浮信息 */
+.map-tip {
+  position: absolute; top: 12px; left: 12px; z-index: 10;
+  background: rgba(14, 23, 41, .88); border: 1px solid #1d3557;
+  border-radius: 6px; padding: 8px 12px; font-size: 12px; color: #9fb4d4;
+}
+/* 图斑详情卡片（含举证照片） */
+.parcel-card { max-width: 300px; padding: 10px 12px; }
+.legend {
+  position: absolute; bottom: 14px; left: 12px; z-index: 10;
+  background: rgba(14, 23, 41, .88); border: 1px solid #1d3557;
+  border-radius: 6px; padding: 8px 12px; font-size: 12px;
+}
+.legend-item { display: flex; align-items: center; gap: 8px; margin: 3px 0; }
+.legend-swatch { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+
+/* 底图切换悬浮控件 */
+.base-switch {
+  position: absolute; top: 12px; right: 12px; z-index: 10;
+}
+
+/* Element Plus 暗色微调 */
+.el-checkbox__label { color: #c6d4ea !important; }
+.stat-item { display: flex; justify-content: space-between; padding: 5px 0; font-size: 13px; }
+.stat-item .k { color: #8298ba; }
+.stat-item .v { color: #ffd166; font-weight: 700; }
