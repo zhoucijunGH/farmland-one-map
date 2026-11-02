@@ -4,6 +4,12 @@
 
 > **演示数据说明**：仓库内全部地块与项目区数据均为**虚构/示意数据**，不使用任何真实图斑与业务数据，可自由运行与二次开发。
 
+## 界面预览
+
+![一张图总览：图层管理、项目区列表、地图渲染与全程核查进度](docs/screenshots/overview.jpg)
+
+![地块构成统计与图斑联动查看](docs/screenshots/detail.jpg)
+
 ## 技术栈
 
 - Vue 3（Composition API）+ Vite 5
